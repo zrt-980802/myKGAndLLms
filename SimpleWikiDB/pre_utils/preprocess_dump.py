@@ -8,6 +8,7 @@
 """
 import argparse
 import multiprocessing
+import warnings
 from multiprocessing import Queue, Process
 from pathlib import Path
 import time
@@ -16,14 +17,7 @@ from preprocess_utils.reader_process import count_lines, read_data
 from preprocess_utils.worker_process import process_data
 from preprocess_utils.writer_process import write_data
 
-input_file = 'D:\data\wikidata-20240101-all.json.gz'
-out_dir = 'D:\data\output\\'
-language_id = 'en'
-processes = '90'
-batch_size = 10000
-num_lines_read = -1
-num_lines_in_dump = -1
-
+warnings.simplefilter(action='ignore', category=SyntaxWarning)
 
 def main(paras):
     start = time.time()
@@ -83,12 +77,8 @@ def main(paras):
 
 
 if __name__ == "__main__":
-    args = {
-        'input_file': 'D:\data\wikidata-20240101-all.json.gz',
-        'out_dir': 'D:\data\output\\',
-        'language_id': 'en',
-        'processes': '90',
-        'batch_size': 10000,
-        'num_lines_read': -1,
-        'num_lines_in_dump': -1}
+    import json
+    file_path = 'params.json'
+    with open(file_path, 'r', encoding='utf-8') as file:
+        args = json.load(file)
     main(args)
