@@ -21,8 +21,8 @@ import requests
 S = requests.Session()
 
 URL = "https://en.wikipedia.org/w/api.php"
-
-SEARCHPAGE = "Donald John Trump"
+##### 使用>>> import wptools
+SEARCHPAGE = "Beyonce"
 
 PARAMS = {
     "action": "query",

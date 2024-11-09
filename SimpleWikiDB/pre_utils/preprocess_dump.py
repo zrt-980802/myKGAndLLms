@@ -6,7 +6,6 @@
 @IDE ：PyCharm
 @Motto：ABC(Always Be Coding)
 """
-import argparse
 import multiprocessing
 import warnings
 from multiprocessing import Queue, Process
