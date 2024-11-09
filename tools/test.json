@@ -1,0 +1,104 @@
+{
+  'batchcomplete': '',
+  'continue': {
+    'sroffset': 10,
+    'continue': '-||'
+  },
+  'query': {
+    'searchinfo': {
+      'totalhits': 18215
+    },
+    'search': [
+      {
+        'ns': 0,
+        'title': 'Donald Trump',
+        'pageid': 4848272,
+        'size': 431319,
+        'wordcount': 37369,
+        'snippet': '<span class="searchmatch">Donald</span> <span class="searchmatch">John</span> <span class="searchmatch">Trump</span> (born June 14, 1946) is an American politician, media personality, and businessman who served as the 45th president of the United States',
+        'timestamp': '2024-11-07T11:31:33Z'
+      },
+      {
+        'ns': 0,
+        'title': 'Donald Trump Jr.',
+        'pageid': 5679119,
+        'size': 126583,
+        'wordcount': 10288,
+        'snippet': '<span class="searchmatch">Donald</span> <span class="searchmatch">John</span> <span class="searchmatch">Trump</span> Jr. (born December 31, 1977), often nicknamed Don\xa0Jr., is an American businessman. He is the eldest child of U.S. president-elect Donald',
+        'timestamp': '2024-11-07T05:08:39Z'
+      },
+      {
+        'ns': 0,
+        'title': 'Family of Donald Trump',
+        'pageid': 52170275,
+        'size': 79912,
+        'wordcount': 5931,
+        'snippet': 'The family of <span class="searchmatch">Donald</span> <span class="searchmatch">Trump</span>, 45th president of the United States (2017–2021) and owner of the <span class="searchmatch">Trump</span> Organization, is an American family of German and Scottish',
+        'timestamp': '2024-11-06T18:17:22Z'
+      },
+      {
+        'ns': 0,
+        'title': "Donald Trump's comments on John McCain",
+        'pageid': 73848222,
+        'size': 18098,
+        'wordcount': 2037,
+        'snippet': ' <span class="searchmatch">Donald</span> <span class="searchmatch">Trump</span>, the 45th U.S. President from 2017 to 2021, has made a series of controversial public statements, criticizing late U.S. Senator <span class="searchmatch">John</span> McCain',
+        'timestamp': '2024-10-23T12:53:31Z'
+      },
+      {
+        'ns': 0,
+        'title': 'Personal and business legal affairs of Donald Trump',
+        'pageid': 50639785,
+        'size': 294591,
+        'wordcount': 25785,
+        'snippet': 'From 1973 until he was elected president in 2016, <span class="searchmatch">Donald</span> <span class="searchmatch">Trump</span> and his businesses were involved in over 4,000 legal cases in United States federal and',
+        'timestamp': '2024-11-06T22:25:18Z'
+      },
+      {
+        'ns': 0,
+        'title': 'Pseudonyms used by Donald Trump',
+        'pageid': 51124523,
+        'size': 24611,
+        'wordcount': 2278,
+        'snippet': '<span class="searchmatch">Donald</span> <span class="searchmatch">Trump</span>, an American businessman, politician, and former president of the United States has used several pseudonyms, including &quot;<span class="searchmatch">John</span> Barron&quot; (or',
+        'timestamp': '2024-10-03T00:38:15Z'
+      },
+      {
+        'ns': 0,
+        'title': 'List of things named after Donald Trump',
+        'pageid': 49145374,
+        'size': 42965,
+        'wordcount': 3961,
+        'snippet': 'The following things are named after <span class="searchmatch">Donald</span> <span class="searchmatch">Trump</span>, an American businessman, real estate developer, and 45th president of the United States. Note: All current',
+        'timestamp': '2024-11-07T03:18:52Z'
+      },
+      {
+        'ns': 0,
+        'title': 'Impeachment of Donald Trump',
+        'pageid': 66373449,
+        'size': 688,
+        'wordcount': 119,
+        'snippet': 'The impeachment of <span class="searchmatch">Donald</span> <span class="searchmatch">Trump</span> may refer to: First impeachment of <span class="searchmatch">Donald</span> <span class="searchmatch">Trump</span>, the 2019 impeachment on charges of abuse of power and obstruction of Congress',
+        'timestamp': '2024-02-26T00:37:31Z'
+      },
+      {
+        'ns': 0,
+        'title': 'False or misleading statements by Donald Trump',
+        'pageid': 58856421,
+        'size': 480613,
+        'wordcount': 44748,
+        'snippet': 'During and after his term as President of the United States, <span class="searchmatch">Donald</span> <span class="searchmatch">Trump</span> made tens of thousands of false or misleading claims. The Washington Post\'s fact-checkers',
+        'timestamp': '2024-11-06T21:37:14Z'
+      },
+      {
+        'ns': 0,
+        'title': 'Attempted assassination of Donald Trump in Pennsylvania',
+        'pageid': 77349783,
+        'size': 249009,
+        'wordcount': 18910,
+        'snippet': 'On July 13, 2024, <span class="searchmatch">Donald</span> <span class="searchmatch">Trump</span>, a former president of the United States and then the presumptive nominee of the Republican Party in the 2024 presidential',
+        'timestamp': '2024-11-06T17:34:41Z'
+      }
+    ]
+  }
+}
