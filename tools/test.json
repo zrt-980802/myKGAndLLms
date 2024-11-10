@@ -1,103 +1,105 @@
 {
-  'batchcomplete': '',
-  'continue': {
-    'sroffset': 10,
-    'continue': '-||'
+  "batchcomplete": "",
+  "continue": {
+    "sroffset": 10,
+    "continue": "-||"
   },
-  'query': {
-    'searchinfo': {
-      'totalhits': 18215
+  "query": {
+    "searchinfo": {
+      "totalhits": 9102,
+      "suggestion": "beyoncé",
+      "suggestionsnippet": "beyoncé"
     },
-    'search': [
+    "search": [
       {
-        'ns': 0,
-        'title': 'Donald Trump',
-        'pageid': 4848272,
-        'size': 431319,
-        'wordcount': 37369,
-        'snippet': '<span class="searchmatch">Donald</span> <span class="searchmatch">John</span> <span class="searchmatch">Trump</span> (born June 14, 1946) is an American politician, media personality, and businessman who served as the 45th president of the United States',
-        'timestamp': '2024-11-07T11:31:33Z'
+        "ns": 0,
+        "title": "Beyoncé",
+        "pageid": 83688,
+        "size": 399646,
+        "wordcount": 31449,
+        "snippet": "<span class="searchmatch">Beyoncé</span> Giselle Knowles-Carter (born September 4, 1981) is an American singer, songwriter and businesswoman. Nicknamed &quot;Queen Bey&quot; (pronounced &quot;queen",
+        "timestamp": "2024-11-08T03:28:51Z"
       },
       {
-        'ns': 0,
-        'title': 'Donald Trump Jr.',
-        'pageid': 5679119,
-        'size': 126583,
-        'wordcount': 10288,
-        'snippet': '<span class="searchmatch">Donald</span> <span class="searchmatch">John</span> <span class="searchmatch">Trump</span> Jr. (born December 31, 1977), often nicknamed Don\xa0Jr., is an American businessman. He is the eldest child of U.S. president-elect Donald',
-        'timestamp': '2024-11-07T05:08:39Z'
+        "ns": 0,
+        "title": "Beyoncé (album)",
+        "pageid": 41353912,
+        "size": 230855,
+        "wordcount": 17542,
+        "snippet": "<span class="searchmatch">Beyoncé</span> is the fifth studio album by American singer and songwriter <span class="searchmatch">Beyoncé</span>. It was released on December 13, 2013, through Parkwood Entertainment and",
+        "timestamp": "2024-11-08T09:55:38Z"
       },
       {
-        'ns': 0,
-        'title': 'Family of Donald Trump',
-        'pageid': 52170275,
-        'size': 79912,
-        'wordcount': 5931,
-        'snippet': 'The family of <span class="searchmatch">Donald</span> <span class="searchmatch">Trump</span>, 45th president of the United States (2017–2021) and owner of the <span class="searchmatch">Trump</span> Organization, is an American family of German and Scottish',
-        'timestamp': '2024-11-06T18:17:22Z'
+        "ns": 0,
+        "title": "Tina Knowles",
+        "pageid": 24620717,
+        "size": 38610,
+        "wordcount": 3327,
+        "snippet": "Celestine Ann &quot;Tina&quot; <span class="searchmatch">Beyoncé</span> Knowles (née <span class="searchmatch">Beyoncé</span>; born January 4, 1954) is an American businesswoman, fashion designer, and philanthropist known for establishing",
+        "timestamp": "2024-11-08T22:45:52Z"
       },
       {
-        'ns': 0,
-        'title': "Donald Trump's comments on John McCain",
-        'pageid': 73848222,
-        'size': 18098,
-        'wordcount': 2037,
-        'snippet': ' <span class="searchmatch">Donald</span> <span class="searchmatch">Trump</span>, the 45th U.S. President from 2017 to 2021, has made a series of controversial public statements, criticizing late U.S. Senator <span class="searchmatch">John</span> McCain',
-        'timestamp': '2024-10-23T12:53:31Z'
+        "ns": 0,
+        "title": "Cowboy Carter",
+        "pageid": 76067619,
+        "size": 192075,
+        "wordcount": 14860,
+        "snippet": "Cowboy Carter) is the eighth studio album by American singer and songwriter <span class="searchmatch">Beyoncé</span>, released on March 29, 2024, via Parkwood Entertainment and Columbia Records",
+        "timestamp": "2024-11-09T04:48:40Z"
       },
       {
-        'ns': 0,
-        'title': 'Personal and business legal affairs of Donald Trump',
-        'pageid': 50639785,
-        'size': 294591,
-        'wordcount': 25785,
-        'snippet': 'From 1973 until he was elected president in 2016, <span class="searchmatch">Donald</span> <span class="searchmatch">Trump</span> and his businesses were involved in over 4,000 legal cases in United States federal and',
-        'timestamp': '2024-11-06T22:25:18Z'
+        "ns": 0,
+        "title": "Lemonade (album)",
+        "pageid": 50293518,
+        "size": 281149,
+        "wordcount": 22285,
+        "snippet": "Lemonade is the sixth studio album by American singer-songwriter <span class="searchmatch">Beyoncé</span>. It was released on April 23, 2016, by Parkwood Entertainment and Columbia Records",
+        "timestamp": "2024-11-08T09:49:08Z"
       },
       {
-        'ns': 0,
-        'title': 'Pseudonyms used by Donald Trump',
-        'pageid': 51124523,
-        'size': 24611,
-        'wordcount': 2278,
-        'snippet': '<span class="searchmatch">Donald</span> <span class="searchmatch">Trump</span>, an American businessman, politician, and former president of the United States has used several pseudonyms, including &quot;<span class="searchmatch">John</span> Barron&quot; (or',
-        'timestamp': '2024-10-03T00:38:15Z'
+        "ns": 0,
+        "title": "Renaissance (Beyoncé album)",
+        "pageid": 71036494,
+        "size": 182499,
+        "wordcount": 13206,
+        "snippet": "Renaissance) is the seventh studio album by American singer and songwriter <span class="searchmatch">Beyoncé</span>. It was released on July 29, 2022, by Parkwood Entertainment and Columbia",
+        "timestamp": "2024-10-16T23:03:28Z"
       },
       {
-        'ns': 0,
-        'title': 'List of things named after Donald Trump',
-        'pageid': 49145374,
-        'size': 42965,
-        'wordcount': 3961,
-        'snippet': 'The following things are named after <span class="searchmatch">Donald</span> <span class="searchmatch">Trump</span>, an American businessman, real estate developer, and 45th president of the United States. Note: All current',
-        'timestamp': '2024-11-07T03:18:52Z'
+        "ns": 0,
+        "title": "Dangerously in Love",
+        "pageid": 427723,
+        "size": 145508,
+        "wordcount": 10809,
+        "snippet": "Dangerously in Love is the debut solo studio album by American singer-songwriter <span class="searchmatch">Beyoncé</span>. It was released on June 23, 2003, by Columbia Records and Music World",
+        "timestamp": "2024-11-05T11:58:49Z"
       },
       {
-        'ns': 0,
-        'title': 'Impeachment of Donald Trump',
-        'pageid': 66373449,
-        'size': 688,
-        'wordcount': 119,
-        'snippet': 'The impeachment of <span class="searchmatch">Donald</span> <span class="searchmatch">Trump</span> may refer to: First impeachment of <span class="searchmatch">Donald</span> <span class="searchmatch">Trump</span>, the 2019 impeachment on charges of abuse of power and obstruction of Congress',
-        'timestamp': '2024-02-26T00:37:31Z'
+        "ns": 0,
+        "title": "Beyoncé (disambiguation)",
+        "pageid": 68772050,
+        "size": 668,
+        "wordcount": 128,
+        "snippet": "Look up <span class="searchmatch">Beyoncé</span> in Wiktionary, the free dictionary. <span class="searchmatch">Beyoncé</span> Knowles-Carter (born 1981) is an American singer, songwriter and businesswoman. <span class="searchmatch">Beyoncé</span> may also",
+        "timestamp": "2024-10-17T02:37:51Z"
       },
       {
-        'ns': 0,
-        'title': 'False or misleading statements by Donald Trump',
-        'pageid': 58856421,
-        'size': 480613,
-        'wordcount': 44748,
-        'snippet': 'During and after his term as President of the United States, <span class="searchmatch">Donald</span> <span class="searchmatch">Trump</span> made tens of thousands of false or misleading claims. The Washington Post\'s fact-checkers',
-        'timestamp': '2024-11-06T21:37:14Z'
+        "ns": 0,
+        "title": "Beyoncé singles discography",
+        "pageid": 74859198,
+        "size": 126240,
+        "wordcount": 5571,
+        "snippet": "American singer <span class="searchmatch">Beyoncé</span> has released 61 singles as lead artist, 17 singles as a featured artist, 13 promotional singles, and six charity singles. According",
+        "timestamp": "2024-11-05T20:05:17Z"
       },
       {
-        'ns': 0,
-        'title': 'Attempted assassination of Donald Trump in Pennsylvania',
-        'pageid': 77349783,
-        'size': 249009,
-        'wordcount': 18910,
-        'snippet': 'On July 13, 2024, <span class="searchmatch">Donald</span> <span class="searchmatch">Trump</span>, a former president of the United States and then the presumptive nominee of the Republican Party in the 2024 presidential',
-        'timestamp': '2024-11-06T17:34:41Z'
+        "ns": 0,
+        "title": "List of awards and nominations received by Beyoncé",
+        "pageid": 3306354,
+        "size": 505215,
+        "wordcount": 17015,
+        "snippet": "American singer-songwriter <span class="searchmatch">Beyoncé</span> has received numerous awards and honorary accolades. With a total of 32 wins and 99 nominations from the Grammy Awards",
+        "timestamp": "2024-11-09T07:51:01Z"
       }
     ]
   }

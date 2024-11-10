@@ -1,0 +1,9 @@
+{
+  "input_file": "F:\\wikidata-20240101-all.json.gz",
+  "out_dir": "E:\\data\\output\\",
+  "language_id": "en",
+  "processes": 1,
+  "batch_size": 10000,
+  "num_lines_read": -1,
+  "num_lines_in_dump": -1
+}

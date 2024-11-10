@@ -85,10 +85,10 @@ def filter_value(
 
 
 def main(args):
-    os.makedirs(args.output_dir, exist_ok=True)
-    data_dir = args.input_dir
-    num_chunks = args.num_chunks  # adjust as needed
-    pool = Pool(processes=args.num_workers)  # adjust as needed
+    os.makedirs(args['output_dir'], exist_ok=True)
+    data_dir = args['input_dir']
+    num_chunks = args['num_chunks']  # adjust as needed
+    pool = Pool(processes=args['num_workers'])  # adjust as needed
 
     files_index = {
         "labels": get_batch_files(os.path.join(data_dir, "labels")),
@@ -122,7 +122,7 @@ def main(args):
     pid_to_name = {}
     name_to_pid = {}
     name_to_pid_list = []
-    print(f"args.chunk_idx: {args.chunk_idx}")
+    print(f"args.chunk_idx: {args['chunk_idx']}")
 
     # Step 1: Read Entity label <=> QID mapping
     print("Reading entity labels ...")
@@ -179,7 +179,7 @@ def main(args):
 
     # Step 3: Read entity_rels, entity_values, and external_ids
     for i in range(num_chunks):
-        if args.chunk_idx != -1 and i != args.chunk_idx:
+        if args['chunk_idx'] != -1 and i != args['chunk_idx']:
             continue
         start = i * chunk_size_entity_rels
         end = start + chunk_size_entity_rels
@@ -271,7 +271,7 @@ def main(args):
 
         # Dump 3 index files
         with open(
-            f"{args.output_dir}/relation_entities_chunk_{i+1}.pickle", "wb"
+            f"{args['output_dir']}/relation_entities_chunk_{i+1}.pickle", "wb"
         ) as handle:
             pickle.dump(
                 relations_linked_to_entities,
@@ -279,7 +279,7 @@ def main(args):
                 protocol=pickle.HIGHEST_PROTOCOL,
             )
         with open(
-            f"{args.output_dir}/tail_entities_chunk_{i+1}.pickle", "wb"
+            f"{args['output_dir']}/tail_entities_chunk_{i+1}.pickle", "wb"
         ) as handle:
             pickle.dump(
                 entities_related_to_relent_pair,
@@ -288,17 +288,17 @@ def main(args):
             )
 
         with open(
-            f"{args.output_dir}/tail_values_chunk_{i+1}.pickle", "wb"
+            f"{args['output_dir']}/tail_values_chunk_{i+1}.pickle", "wb"
         ) as handle:
             pickle.dump(tail_values, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
         with open(
-            f"{args.output_dir}/external_ids_chunk_{i+1}.pickle", "wb"
+            f"{args['output_dir']}/external_ids_chunk_{i+1}.pickle", "wb"
         ) as handle:
             pickle.dump(external_ids, handle, protocol=pickle.HIGHEST_PROTOCOL)
             
         with open(
-            f"{args.output_dir}/mid_to_qid_chunk_{i+1}.pickle", "wb"
+            f"{args['output_dir']}/mid_to_qid_chunk_{i+1}.pickle", "wb"
         ) as handle:
             pickle.dump(mid_to_qid, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
@@ -311,24 +311,30 @@ def main(args):
 
 
 if __name__ == "__main__":
-    import argparse
+    import json
 
-    parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "--input_dir",
-        type=str,
-        required=True,
-        help="Preprocessed Wikidata dumpfile directory",
-    )
-    parser.add_argument(
-        "--output_dir",
-        type=str,
-        required=True,
-        help="Output directory",
-    )
-    parser.add_argument("--num_chunks", type=int, default=5)
-    parser.add_argument("--num_workers", type=int, default=400)
-    parser.add_argument("--chunk_idx", type=int, default=-1)
-
-    args = parser.parse_args()
+    file_path = 'buile_index_params.json'
+    with open(file_path, 'r', encoding='utf-8') as file:
+        args = json.load(file)
+    #
+    # import argparse
+    #
+    # parser = argparse.ArgumentParser()
+    # parser.add_argument(
+    #     "--input_dir",
+    #     type=str,
+    #     required=True,
+    #     help="Preprocessed Wikidata dumpfile directory",
+    # )
+    # parser.add_argument(
+    #     "--output_dir",
+    #     type=str,
+    #     required=True,
+    #     help="Output directory",
+    # )
+    # parser.add_argument("--num_chunks", type=int, default=5)
+    # parser.add_argument("--num_workers", type=int, default=400)
+    # parser.add_argument("--chunk_idx", type=int, default=-1)
+    #
+    # args = parser.parse_args()
     main(args)

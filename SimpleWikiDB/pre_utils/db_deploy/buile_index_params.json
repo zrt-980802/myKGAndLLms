@@ -1,0 +1,7 @@
+{
+  "input_dir": "E:\\data\\output\\",
+  "output_dir": "E:\\data\\output_index\\",
+  "num_chunks": 100,
+  "num_workers": 150,
+  "chunk_idx": -1
+}
