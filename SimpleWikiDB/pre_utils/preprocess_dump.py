@@ -18,6 +18,7 @@ from preprocess_utils.writer_process import write_data
 
 warnings.simplefilter(action='ignore', category=SyntaxWarning)
 
+
 def main(paras):
     start = time.time()
 
@@ -75,9 +76,19 @@ def main(paras):
     print(f"Finished processing {num_lines_read.value} in {time.time() - start}s")
 
 
+def timeStamp(content):
+    from datetime import datetime
+    now = datetime.now()
+    formatted_now = now.strftime("%Y-%m-%d %H:%M:%S")
+    print(f"{content}, 当前时间是：", formatted_now)
+
+
 if __name__ == "__main__":
+    timeStamp('Start')
     import json
+
     file_path = 'params.json'
     with open(file_path, 'r', encoding='utf-8') as file:
         args = json.load(file)
     main(args)
+    timeStamp('End')

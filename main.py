@@ -1,6 +1,6 @@
 import tools.LLmApi as la
 
-with open('prompt.txt', 'r', encoding='utf-8') as f:
+with open('tools/prompt.txt', 'r', encoding='utf-8') as f:
     prompt = f.read()
     # print(prompt)
 print('------------------------------------')
