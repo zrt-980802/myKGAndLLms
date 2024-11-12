@@ -77,7 +77,8 @@ PROP_NAMESPACE = 120
 QUERY_LIMIT = 50
 PATH = os.path.dirname(os.path.realpath(__file__))
 SAVE_DIRECTORY = PATH + "\\"
-ABS_PATH = SAVE_DIRECTORY + "props.json"
+FILE_NAME = "props.json"
+ABS_PATH = SAVE_DIRECTORY + FILE_NAME
 
 
 def parseprop(item):
@@ -230,8 +231,13 @@ class AutomatonTree:
         return result
 
 
+if os.path.exists(ABS_PATH) is False:
+    print(f"The {FILE_NAME} is not existed!, build now....")
+    main()
+
 with open(ABS_PATH) as f:
     props = json.loads(f.read())
+
 acTree = AutomatonTree(props)
 
 

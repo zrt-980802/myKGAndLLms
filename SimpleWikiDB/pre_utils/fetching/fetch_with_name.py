@@ -9,7 +9,6 @@
 import json
 from datetime import datetime
 
-import SimpleWikiDB.pre_utils.fetching.fetch_with_name
 
 """
 This script fetches all QIDs which are associated with a particular name/alias (i.e. "Victoria")
@@ -35,7 +34,7 @@ def filtering_func(target_name, filename):
 
 
 def main(args):
-    table_files = get_batch_files(args['input_file'])
+    table_files = get_batch_files(args['input_file_aliases'])
     pool = Pool(processes=args['processes'])
     filtered = []
     for output in tqdm(
@@ -50,8 +49,7 @@ def main(args):
         print(f"Row {i}: {item}")
 
 
-
-def load_files(filename):
+def load_files1(filename):
     """ Load JSONL files and aggregate data by alias """
     name2alias = {}
     for item in jsonl_generator(filename):
@@ -62,12 +60,29 @@ def load_files(filename):
             name2alias[alias].append(item['qid'])
     return name2alias
 
+
+def load_files2(filename):
+    """ Load JSONL files and aggregate data by alias """
+    name2label = {}
+    for item in jsonl_generator(filename):
+        label = item['label']
+        if label not in name2label:
+            name2label[label] = [item['qid']]
+        else:
+            name2label[label].append(item['qid'])
+    return name2label
+
+
 def load(args):
     """ Load data from files in parallel """
-    table_files = get_batch_files(args['input_file'])
+    # table_files = get_batch_files(args['input_file'])
+    table_files_aliases = get_batch_files(args['input_file_aliases'])
+    table_files_labels = get_batch_files(args['input_file_labels'])
     with Pool(processes=args['processes']) as pool:
-        results = list(tqdm(pool.imap_unordered(load_files, table_files), total=len(table_files)))
-    return results
+        results1 = list(tqdm(pool.imap_unordered(load_files1, table_files_aliases), total=len(table_files_aliases)))
+    with Pool(processes=args['processes']) as pool:
+        results2 = list(tqdm(pool.imap_unordered(load_files2, table_files_labels), total=len(table_files_labels)))
+    return results1 + results2
 
 
 def search(data, name):

@@ -1,4 +1,5 @@
 {
-  "input_file": "E:\\data\\output\\aliases",
-  "processes": 20
+  "input_file_aliases": "E:\\data\\output\\aliases",
+  "input_file_labels": "E:\\data\\output\\labels",
+  "processes": 10
 }
