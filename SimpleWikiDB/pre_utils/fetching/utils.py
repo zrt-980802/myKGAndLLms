@@ -13,20 +13,16 @@ import ujson as json
 
 def jsonl_generator(fname):
     """ Returns generator for jsonl file """
-    for line in open(fname, 'r'):
-        line = line.strip()
-        if len(line) < 3:
-            d = {}
-        elif line[len(line) - 1] == ',':
-            d = json.loads(line[:len(line) - 1])
-        else:
-            d = json.loads(line)
-        yield d
+    with open(fname, 'r', encoding='utf-8') as f:
+        for line in f:
+            line = line.strip()
+            if line:
+                # 直接加载JSON，避免处理末尾逗号的情况
+                yield json.loads(line)
 
 
 def get_batch_files(fdir):
     """ Returns paths to files in fdir """
-    filenames = os.listdir(fdir)
-    filenames = [os.path.join(fdir, f) for f in filenames]
+    filenames = [os.path.join(fdir, f) for f in os.listdir(fdir)]
     print(f"Fetched {len(filenames)} files from {fdir}")
     return filenames

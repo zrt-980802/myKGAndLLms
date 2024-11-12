@@ -80,7 +80,7 @@ def timeStamp(content):
     from datetime import datetime
     now = datetime.now()
     formatted_now = now.strftime("%Y-%m-%d %H:%M:%S")
-    print(f"{content}, 当前时间是：", formatted_now)
+    print(f"{content}, The current time is：", formatted_now)
 
 
 if __name__ == "__main__":
