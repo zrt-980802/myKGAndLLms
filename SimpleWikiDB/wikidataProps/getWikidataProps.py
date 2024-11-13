@@ -226,29 +226,35 @@ class AutomatonTree:
         iters = self.ACTree.iter(target)
         result = []
         for it in iters:
-            print(it)
+            # print(it)
             result.append(it[1])
         return result
 
 
-if os.path.exists(ABS_PATH) is False:
-    print(f"The {FILE_NAME} is not existed!, build now....")
-    main()
+acTree = None
 
-with open(ABS_PATH) as f:
-    props = json.loads(f.read())
 
-acTree = AutomatonTree(props)
+def load_acTree():
+    global acTree
+    if os.path.exists(ABS_PATH) is False:
+        print(f"The {FILE_NAME} is not existed!, build now....")
+        main()
+    with open(ABS_PATH) as f:
+        props = json.loads(f.read())
+
+    acTree = AutomatonTree(props)
 
 
 def searchAllWithName(name):
     if len(name) < 3:
         warnings.warn('Too short for Relation-name!!! At least three characters')
         return None
+    if acTree is None:
+        load_acTree()
     result = acTree.search(name)
-    print(acTree.search(name))
+    # print(acTree.search(name))
     return result
 
 
 if __name__ == "__main__":
-    searchAllWithName('son')
+    searchAllWithName('ruling party')

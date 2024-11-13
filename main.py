@@ -1,10 +1,7 @@
-import tools.LLmApi as la
+from tools.WebQSPTools import getQAPairList
 
-with open('tools/prompt.txt', 'r', encoding='utf-8') as f:
+QAPairList = getQAPairList()
+
+with open('prompt.txt', 'r', encoding='utf-8') as f:
     prompt = f.read()
-    # print(prompt)
-print('------------------------------------')
-content = 'When did Beyonce start becoming popular?'
-answer = la.chat_with_prompt(content, prompt)
-print(answer)
-
+# chat_with_prompt

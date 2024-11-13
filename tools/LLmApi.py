@@ -12,14 +12,14 @@ import httpx
 from openai import OpenAI
 
 # read apikey from .key file
-# with open('.key') as f:
-#     MOONSHOT_API_KEY = f.readline()
+with open('.key') as f:
+    MOONSHOT_API_KEY = f.readline()
 
 temperature = 0.3
 max_tokens = 2048
 model = "moonshot-v1-auto"
 client = OpenAI(
-    api_key=os.environ["MOONSHOT_API_KEY"],
+    api_key=MOONSHOT_API_KEY,
     # api_key=MOONSHOT_API_KEY,
     base_url="https://api.moonshot.cn/v1",
 )
@@ -88,3 +88,10 @@ def streaming_print(stream):
         delta = chunk.choices[0].delta
         if delta.content:
             print(delta.content, end="")
+
+
+if __name__ == "__main__":
+    with open('prompt.txt', 'r', encoding='utf-8') as f:
+        prompt = f.read()
+    question = '什么民族最能吃辣'
+    print(chat_with_prompt(question, prompt))
